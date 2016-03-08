@@ -3,7 +3,7 @@ package ru
 import "fmt"
 
 func ExamplePluralize() {
-	for _, i := range []int{0, 1, 2, 3, 4, 9, 11, 12, 21, 25, -1, -3, -11, -21, 132, 3795} {
+	for _, i := range []int{0, 1, 2, 3, 4, 9, 11, 12, 21, 25, -1, -3, -11, -21, 132, 3795, 111} {
 		fmt.Printf("%d %s\n", i, Pluralize(i, "штук", "штука", "штуки"))
 	}
 	// Output:
@@ -23,4 +23,5 @@ func ExamplePluralize() {
 	// -21 штука
 	// 132 штуки
 	// 3795 штук
+	// 111 штук
 }

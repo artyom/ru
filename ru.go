@@ -2,6 +2,7 @@ package ru
 
 // Pluralize возвращает правильную множественную форму для заданного числа
 func Pluralize(i int, item0, item1, item3 string) string {
+	i = i % 100
 	if i < 0 {
 		i = -i
 	}
